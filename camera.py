@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import io
+st.title("App to conver image to gray scale")
 uploaded_image = st.file_uploader("uplaod your file")
 if uploaded_image:
     img=Image.open(uploaded_image)
